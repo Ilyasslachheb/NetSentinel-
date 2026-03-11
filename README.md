@@ -10,17 +10,13 @@ The system runs a **3-stage pipeline** that inspects every packet passing throug
 
 ```
 Packet
-  │
-  ▼
+  ------->
 Stage 1 — Access Control      (Whitelist / Blacklist)
-  │
-  ▼
+  ----------->
 Stage 2 — Rule-Based Filtering (Ports, Rates, ICMP, Scan Detection)
-  │
-  ▼
+  ----------------->
 Stage 3 — Signature Detection  (Attack pattern matching)
-  │
-  ▼
+  ----------------------->
 PASS or BLOCK
 ```
 
